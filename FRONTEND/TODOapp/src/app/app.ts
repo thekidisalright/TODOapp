@@ -13,7 +13,7 @@ export class App {
   arrayDeTarefas = signal<Tarefa[]>([]);
   apiURL: string;
   constructor(private http: HttpClient) {
-    this.apiURL = 'https://apitodoapp-ppxk.onrender.com/';
+    this.apiURL = 'https://apitodoapp-ppxk.onrender.com';
     this.READ_tarefas();
   }
   CREATE_tarefa(descricaoNovaTarefa: string) {
